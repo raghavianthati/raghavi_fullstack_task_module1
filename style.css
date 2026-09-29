@@ -1,0 +1,304 @@
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.navbar-text {
+    font-size: 14px;
+}
+
+
+/* ================= PROJECT HEADER ================= */
+
+.project-header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+
+/* ================= DASHBOARD CARDS ================= */
+
+.dashboard-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h6 {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.dashboard-card h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* ================= ICON BOX ================= */
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #e8edff;
+    color: #4b6cb7;
+
+    font-size: 25px;
+}
+
+.completed-icon {
+    background: #e4f8ec;
+    color: #198754;
+}
+
+.progress-icon {
+    background: #fff3cd;
+    color: #f0ad00;
+}
+
+.pending-icon {
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+
+/* ================= CUSTOM CARD ================= */
+
+.custom-card {
+    border: none;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ================= PROGRESS ================= */
+
+.progress-large {
+    height: 22px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title h3 {
+    font-weight: bold;
+    color: #182848;
+}
+
+.section-title p {
+    color: #777;
+}
+
+
+/* ================= STAGE CARD ================= */
+
+.stage-card {
+    background: white;
+    border-radius: 18px;
+
+    padding: 25px;
+
+    height: 100%;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    border-top: 5px solid #4b6cb7;
+}
+
+.stage-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= STAGE NUMBER ================= */
+
+.stage-number {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #4b6cb7;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* ================= STAGE TITLE ================= */
+
+.stage-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #182848;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.stage-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================= STATUS ================= */
+
+.status-select {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+/* ================= STAGE PROGRESS ================= */
+
+.stage-progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.details-btn {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+}
+
+.modal-body {
+    line-height: 1.7;
+}
+
+.modal-body h6 {
+    color: #182848;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+
+    text-align: center;
+
+    background: #182848;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .project-header h1 {
+        font-size: 24px;
+    }
+
+    .navbar-text {
+        display: none;
+    }
+
+}
